@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- اللغة والاتجاه الافتراضي يتم ضبطهما من script.js (عربي/RTL افتراضياً) -->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuneMax | منيو ماكس — نظام منيو ذكي للمطاعم</title>
+  <meta name="description" content="منيو ماكس — نظام منيو ذكي للمطاعم. الزبون يطلب من موبايله والطلب يوصل الكاشير فوراً، بدون تطبيق وبدون تغيير نظامك الحالي.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== 1. الهيدر ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" id="brand-logo" aria-label="MuneMax"></a>
+      <div class="header-actions">
+        <button class="lang-toggle" id="lang-toggle" type="button"></button>
+        <a class="header-whatsapp" id="header-whatsapp" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== 2. الهيرو ===================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge" id="hero-badge"></span>
+          <h1 class="hero-title" id="hero-title"></h1>
+          <p class="hero-subtitle" id="hero-subtitle"></p>
+          <div class="hero-buttons">
+            <a class="btn btn-whatsapp" id="hero-whatsapp" target="_blank" rel="noopener"></a>
+            <button class="btn btn-outline" id="hero-demo" type="button"></button>
+          </div>
+        </div>
+        <div class="hero-visual" id="hero-visual"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 2.5 الديمو التفاعلي ===================== -->
+    <section class="demo-section" id="demo">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="demo-title"></h2>
+          <p id="demo-subtitle"></p>
+        </div>
+        <div class="demo-wrapper" id="demo-wrapper"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. المقارنة قبل/بعد ===================== -->
+    <section class="comparison" id="comparison">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="comparison-title"></h2>
+          <p id="comparison-subtitle"></p>
+        </div>
+        <div class="comparison-grid">
+          <div class="compare-col compare-before reveal">
+            <h3 id="before-title"></h3>
+            <ul id="before-list"></ul>
+          </div>
+          <div class="compare-col compare-after reveal">
+            <h3 id="after-title"></h3>
+            <ul id="after-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. المزايا ===================== -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="features-title"></h2>
+          <p id="features-subtitle"></p>
+        </div>
+        <div class="features-grid" id="features-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. كيف يعمل ===================== -->
+    <section class="how-section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="how-title"></h2>
+          <p id="how-subtitle"></p>
+        </div>
+        <div class="how-steps" id="how-steps"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. لمن هذا النظام ===================== -->
+    <section class="audience" id="audience">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="audience-title"></h2>
+          <p id="audience-subtitle"></p>
+        </div>
+        <div class="audience-grid" id="audience-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. معرض الواجهات ===================== -->
+    <section class="screenshots" id="screenshots">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="screenshots-title"></h2>
+          <p id="screenshots-subtitle"></p>
+        </div>
+        <div class="screenshots-grid" id="screenshots-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. آراء العملاء ===================== -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="testimonials-title"></h2>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 9. شريط لوجوهات المطاعم (يختفي لو فاضي) ===================== -->
+    <section class="logos-section" id="logos-section">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="logos-title"></h2>
+        </div>
+        <div class="logos-strip" id="logos-strip"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 10. الأسئلة الشائعة ===================== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="faq-title"></h2>
+          <p id="faq-subtitle"></p>
+        </div>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- ===================== 11. CTA التجربة المجانية ===================== -->
+    <section class="trial-section" id="trial">
+      <div class="container">
+        <h2 id="trial-title"></h2>
+        <p id="trial-subtitle"></p>
+        <div class="trial-buttons">
+          <a class="btn btn-whatsapp" id="trial-whatsapp" target="_blank" rel="noopener"></a>
+          <a class="btn btn-outline-white" id="trial-pdf" download></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 12. الفوتر ===================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo" id="footer-logo"></div>
+        <p class="footer-tagline" id="footer-tagline"></p>
+      </div>
+      <div class="footer-actions">
+        <div class="footer-social" id="footer-social"></div>
+        <a class="footer-pdf" id="footer-pdf" download></a>
+      </div>
+      <p class="footer-rights" id="footer-rights"></p>
+    </div>
+  </footer>
+
+  <!-- الزر العائم -->
+  <a class="floating-whatsapp" id="floating-whatsapp" target="_blank" rel="noopener"></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
